@@ -4,7 +4,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 var app = express();
 
-app.get('/scrape', function(req, res) {
+app.get('/', function(req, res) {
 
     url = 'http://www.imdb.com/title/tt1229340/';
 
@@ -54,6 +54,6 @@ app.get('/scrape', function(req, res) {
     });
 })
 
-app.listen('8081')
-console.log('Magic happens on port 8081');
+app.listen('8888')
+console.log('Magic happens on port 8888');
 exports = module.exports = app;
